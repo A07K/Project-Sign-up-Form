@@ -1,0 +1,146 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    max-width: 100vw; /* Added to prevent container from exceeding viewport width */
+}
+
+.image-section {
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    width: 600px;
+    min-width: 215px;
+    height: 100vh;
+    background-size: cover;
+}
+
+.odin-logo {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('/home/a07k-u/repos/Project-Sign-up-Form/Norse-Bold.otf') format('opentype'); /* Update the path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.odin-logo img {
+    height: 90px;
+    width: auto;
+}
+
+.odin-logo p {
+    font-family: 'Norse-Bold', sans-serif;
+    color: whitesmoke;
+    font-size: 70px;
+    padding: 12px;
+    margin: 0;
+}
+
+.shoutout {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 195px;
+    margin-bottom: 20px;
+}
+
+.shoutout a {
+    color: whitesmoke;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 600px); /* Adjust as needed to accommodate padding/margin */
+    height: 100vh; /* Adjust as needed */
+    background-color: #f5f5f4;
+    flex-shrink: 0;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8% 10%;
+    gap: 30px;
+}
+
+/*background-color: #fafafa;
+    box-shadow: 0px 5px 5px #d4d4d4;*/
+
+.andP {
+    background-color: #fafafa;
+    margin-bottom: 50px;
+    padding-left: 10%;
+    padding-bottom: 50px;
+    box-shadow: 0px 5px 5px #d4d4d4;
+
+}
+
+.andP p {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.input-row {
+    display: flex;
+    column-gap: 90px;
+    margin-bottom: 25px;
+    background-color: #fafafa;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #71797E;
+    gap: 2.7px;
+}
+
+input {
+    box-shadow: 3px 3px 3px #d4d4d4;
+    border: 1px solid lightgray; /* Set the border property for the whole border */
+    border-radius: 5px;
+}
+
+#buttons {
+    padding-left: 10%;
+    font-weight: bolder;
+}
+
+button {
+    padding: 15px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px #f5f5f4;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #596D48;
+    color: whitesmoke;
+    margin-bottom: 18px;
+
+}
